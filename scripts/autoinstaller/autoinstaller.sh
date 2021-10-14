@@ -1150,7 +1150,7 @@ function install_shared_delegates_website_npm_packages()
 {
   echo -ne "${COLOR_PRINT_YELLOW}Updating node_modules${END_COLOR_PRINT}"
   cd "${SHARED_DELEGATES_WEBSITE_DIR}"
-  npm update --force &>/dev/null
+  npm update --legacy-peer-deps --force &>/dev/null
   echo -ne "\r${COLOR_PRINT_GREEN}Updating node_modules${END_COLOR_PRINT}"
   echo
 }
